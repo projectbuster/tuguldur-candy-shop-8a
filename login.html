@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Login.css" ></link>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'login')">
+          Login
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'signup')">
+          Signup
+        </button>
+      </div>
+
+      <div id="login" class="tabcontent">
+        <input type="email" id="lemail" />
+        <input type="password" id="lpass" />
+        <button onclick="openTab(event, 'forgot')">forgot password</button>
+        <button onclick="Login()">
+        <a href="index.html">Login</a>
+        </button>
+      </div>
+      <div id="forgot" class="tabcontent">
+        <button onclick="openTab(event, 'login')">back to login</button>
+        <p>your email</p>
+        <input type="email" id="femail" />
+        <button onclick="Forgot()">check user</button>
+        <hr />
+        <p>Your secret question is:</p>
+        <p id="secretQuestion"></p>
+        <p>Your answer</p>
+        <input type="text" id="Answer" />
+        <button onclick="Check()">check answer</button>
+        <p>your pass was:</p>
+        <p id="fpass"></p>
+      </div>
+
+      <div id="signup" class="tabcontent">
+        <p>firstname</p>
+        <input type="text" id="firstname" />
+        <p>lastname</p>
+        <input type="text" id="lastname" />
+        <p>birth date</p>
+        <input type="date" id="birth" />
+        <p>email</p>
+        <input type="email" id="email" />
+        <p>password</p>
+        <input type="text" id="passOne" />
+        <p>rewrite password</p>
+        <input type="text" id="passTwo" />
+        <p>secret question</p>
+        <input type="text" id="question" />
+        <p>secret question answer</p>
+        <input type="text" id="answer" />
+        <button onclick="Signup()">
+        <a href="index.html">Sign up</a>
+        </button>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  
+  </body>
+</html>
